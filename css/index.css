@@ -12,4 +12,11 @@ display: flex;
 .about-this-course{
     display: flex; 
 }
+.menu{
+    display: flex;
+}
+.icons > a{
+    width: 35px;
+    height: 35px;
+}
 
