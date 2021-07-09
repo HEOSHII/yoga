@@ -1,22 +1,67 @@
-body{
-padding:0;
-margin:0; 
+*{
+    margin: 0;
+    padding:0;
+    
 }
-.header{
-block-size: 100%;
-background-image: url(/img/header.png);
-background-size: 100%;
-background-repeat: no-repeat;
-display: flex;
+:root{
+    font-family: 'Fira Sans', sans-serif;
 }
-.about-this-course{
-    display: flex; 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+header{
+    border: 1px solid black;
+    background-image: url(../img/header.png);
+    background-size: cover;
+    min-height: 850px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+header .upper-head{
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 0px 20px 40px;
 }
 .menu{
+    /*border: 1px solid black;*/
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 35px;
 }
-.icons > a{
-    width: 35px;
-    height: 35px;
+header .menu a{
+    
+    margin: 0px 5px 0px 8px;
+    color: rgb(136, 131, 146);
+    text-decoration: none;
+    font-weight: lighter;
+    
 }
+header .menu a:hover{
+    
+    color: rgb(62, 46, 94);
+    
+    transition: 0.5s;
+}
+.upper-head h2{
+    color: rgb(136, 131, 146);
+    text-decoration: none;
+    font-weight:normal;
+    font-size: medium;
 
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8%;
+    margin-left: 50px;
+
+}
+.banner h1{
+    font-size: 100px;
+    color: white;
+}
