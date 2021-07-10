@@ -13,7 +13,7 @@ header{
     
     background-image: url(../img/header.png);
     background-size: cover;
-    min-height: 850px;
+    /*min-height: 850px;*/
     min-width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -166,6 +166,7 @@ header .menu a:hover{
     margin-top: 130px;
     margin-left: 50px;
     animation: blinking 2000ms infinite;
+    margin-bottom: 50px;
 }
 
 @keyframes blinking {
@@ -186,7 +187,7 @@ background: linear-gradient(90deg, rgba(102,209,224,1) 0%, rgba(158,226,235,1) 1
 
 
 
-@media (max-width:990px) {
+@media (max-width:1030px) {
     .menu {
         display: inline;
     }
@@ -210,7 +211,10 @@ background: linear-gradient(90deg, rgba(102,209,224,1) 0%, rgba(158,226,235,1) 1
     }
     .threebars{
         display: flex;
-        
+        margin-right: 50px;
+    }
+    .banner h1{
+        font-size: 3rem;
     }
     .button-banner{
         margin-bottom: 50px;
@@ -239,12 +243,21 @@ background: linear-gradient(90deg, rgba(102,209,224,1) 0%, rgba(158,226,235,1) 1
         margin-left: 10px;
     }
     .banner h1{
-        font-size: 4rem;
+        font-size: 3rem;
         flex-direction: column;
         justify-content: left;
         margin-top: 5%;
         margin-left: 10px;
     }
+    .button-banner{
+        margin-left: 5.5rem;
+    }
         
     
 }
+.video-youtube{
+    width: 100%;
+}
+
+
+
