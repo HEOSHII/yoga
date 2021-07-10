@@ -1,14 +1,16 @@
 *{
     margin: 0;
     padding:0;
-    
+    box-sizing: border-box;
 }
 :root{
     font-family: 'Fira Sans', sans-serif;
+    --menu-text-color: #525b86;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
 header{
-    border: 1px solid black;
+    
     background-image: url(../img/header.png);
     background-size: cover;
     min-height: 850px;
@@ -30,38 +32,169 @@ header .upper-head{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 35px;
+    margin-right: 60px;
 }
-header .menu a{
+.icons{
+    margin-left: 30px;
+    display: flex;
+}
+.menu button{
+    
+    flex-direction:row;
+    height:36px; 
+    width:36px;
+    margin-left: 15px;
+}
+.menu-button-face{
+    background: url(../img/facebook-before.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    transition: 0.7s;
+    transform: scale(1.0);
+}
+.menu-button-face:hover{
+    background: url(../img/facebook-after.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    transition: 0.2s;
+   
+}
+.menu-button-inst{
+    background: url(../img/instagram-before.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    transition: 0.7s;
+    transform: scale(1.0);
+}
+.menu-button-inst:hover{
+    background: url(../img/instagram-after.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    transition: 0.2s;
+}
+.menu-button-youtube{
+    background: url(../img/youtube-before.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    transition: 0.7s;
+    transform: scale(1.0);
+}
+.menu-button-youtube:hover{
+    background: url(../img/youtube-after.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    transition: 0.2s;
+}
+.sends a{
     
     margin: 0px 5px 0px 8px;
-    color: rgb(136, 131, 146);
+    color: var(--menu-text-color);
     text-decoration: none;
     font-weight: lighter;
+    
+    transition: 0.5s;
+    transform: scale(1.0);
     
 }
 header .menu a:hover{
     
     color: rgb(62, 46, 94);
     
-    transition: 0.5s;
+    transition: 0.2s;
 }
 .upper-head h2{
-    color: rgb(136, 131, 146);
+    color: #7a7370;
     text-decoration: none;
     font-weight:normal;
     font-size: medium;
 
 }
 .banner {
-    display: flex;
+    
     flex-direction: column;
     justify-content: center;
     margin-top: 8%;
     margin-left: 50px;
+   
 
 }
 .banner h1{
     font-size: 100px;
     color: white;
+}
+.header-bottom{
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    flex-direction: column;
+}
+.button-banner{
+    background: rgb(158,226,235);
+    background: linear-gradient(90deg, rgba(158,226,235,1) 0%, rgba(102,209,224,1) 100%);
+    border-radius: 27px;
+    width: 189px;
+    height: 54px;
+    
+    border: none;
+    box-shadow: 0px 8px 18px -4px #68FCFF;
+    cursor: pointer;
+    transition: 1s;
+    transform: scale(1.0);
+    margin-top: 130px;
+    margin-left: 50px;
+}
+.button-banner:hover{
+    
+    box-shadow: 0px 0px 18px -4px #68FCFF;
+    transition: 0.3s;
+    background: rgb(102,209,224);
+background: linear-gradient(90deg, rgba(102,209,224,1) 0%, rgba(158,226,235,1) 100%);
+}
+
+
+
+
+
+@media (max-width:900px) {
+    .menu {
+        display: inline;
+    }
+    .upper-head{
+        display: inline;
+    }
+    .sends{
+        display: flex;
+        flex-direction: column;
+    }
+    .upper-head h2{ 
+        display: none;
+    }
+}
+@media (max-width:500px){
+    
+    .menu {
+        
+        display: inline;
+        flex-direction: column;
+        
+        
+    }
+    .menu > div {
+       
+    }
+    .menu a{
+        
+    }
 }
