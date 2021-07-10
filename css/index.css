@@ -255,6 +255,7 @@ header .menu a:hover{
 }
 .video-youtube{
     width: 100%;
+    frameborder: 0;
 }
 
 
