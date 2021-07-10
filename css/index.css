@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 :root{
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Sans Condensed', sans-serif;
     --menu-text-color: #525b86;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100&display=swap');
 header{
     
     background-image: url(../img/header.png);
@@ -32,10 +32,10 @@ header .upper-head{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 60px;
+    margin-right: 50px;
 }
 .icons{
-    margin-left: 30px;
+    margin-left: 8px;
     display: flex;
 }
 .menu button{
@@ -99,10 +99,11 @@ header .upper-head{
 }
 .sends a{
     
+    font-size: 13px;
     margin: 0px 5px 0px 8px;
     color: var(--menu-text-color);
     text-decoration: none;
-    font-weight: lighter;
+    font-weight: bolder;
     
     transition: 0.5s;
     transform: scale(1.0);
@@ -154,14 +155,22 @@ header .menu a:hover{
     transform: scale(1.0);
     margin-top: 130px;
     margin-left: 50px;
+    animation: blinking 2000ms infinite;
+}
+
+@keyframes blinking {
+    0% {box-shadow: 0px 8px 18px -4px #68FCFF;}
+    50% {box-shadow: 0px 0px 18px -4px #68FCFF;}
+    100% {box-shadow: 0px 8px 18px -4px #68FCFF;}
 }
 .button-banner:hover{
-    
+    animation: none;
     box-shadow: 0px 0px 18px -4px #68FCFF;
     transition: 0.3s;
     background: rgb(102,209,224);
 background: linear-gradient(90deg, rgba(102,209,224,1) 0%, rgba(158,226,235,1) 100%);
 }
+
 
 
 
