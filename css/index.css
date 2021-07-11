@@ -1,16 +1,20 @@
 *{
     margin: 0;
     padding:0;
-    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 :root{
     font-family: 'Fira Sans Condensed', sans-serif;
     --menu-text-color: #525b86;
+    --gradient-before: linear-gradient(45deg, rgba(88,235,255,1) 0%, rgba(148,241,255,1) 49%, rgba(88,235,255,1) 100%);
+    --gradient-after: linear-gradient(45deg, rgba(148,241,255,1) 0%, rgba(88,235,255,1) 49%, rgba(148,241,255,1) 100%);
 }
-
+body{
+    max-width: 1500px;
+    margin: auto;
+}
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100&display=swap');
 header{
-    
     background-image: url(../img/header.png);
     background-size: cover;
     /*min-height: 850px;*/
@@ -40,7 +44,6 @@ header .upper-head{
     display: flex;
 }
 .menu button{
-    
     flex-direction:row;
     height:36px; 
     width:36px;
@@ -61,8 +64,7 @@ header .upper-head{
     background-position: center;
     background-size: cover;
     border: none;
-    transition: 0.2s;
-   
+    transition: 0.2s;   
 }
 .menu-button-inst{
     background: url(../img/instagram-before.png);
@@ -104,8 +106,7 @@ header .upper-head{
     background-position: center;
     background-size: cover;
     border: none;
-    display: none;
-    
+    display: none;    
 }
 .sends a{
     text-decoration: none;
@@ -114,13 +115,10 @@ header .upper-head{
     margin: 0px 5px 0px 8px;
     font-weight: bolder;
     transition: 0s;
-    /*transform: scale(1.0);*/
-    
+    /*transform: scale(1.0);*/    
 }
-header .menu a:hover{
-    
-    color: rgb(62, 46, 94);
-    
+header .menu a:hover{    
+    color: rgb(62, 46, 94);    
     transition: 0.5s;
 }
 .upper-head h1{
@@ -128,39 +126,33 @@ header .menu a:hover{
     text-decoration: none;
     font-weight:normal;
     font-size: medium;
-
 }
-.banner {
-    
+.banner {    
     flex-direction: column;
     justify-content: center;
     margin-top: 8%;
     margin-left: 50px;
-   
-
 }
 .banner h2{
     font-size: 100px;
     color: white;
 }
-.header-bottom{
-    
+.header-bottom{    
     display: grid;
     grid-template-columns: 2fr 1fr;
     flex-direction: column;
 }
 .button-banner{
-    background: rgb(128,240,255);
-    background: linear-gradient(45deg, rgba(128,240,255,1) 0%, rgba(192,246,254,1) 45%, rgba(128,240,255,1) 100%);
+    /*background: rgb(88,235,255);*/
+    background: var(--gradient-before);
     border-radius: 27px;
     width: 189px;
     height: 54px;
     color: white;
     text-decoration: bold;
-    font-size: 15px;
-    
+    font-size: 15px;    
     border: none;
-    box-shadow: 0px 8px 18px -4px #68FCFF;
+    box-shadow: 0px 15px 18px -4px #68FCFF;
     cursor: pointer;
     transition: 0.1s;
     transform: scale(1.0);
@@ -169,25 +161,18 @@ header .menu a:hover{
     animation: blinking 2000ms infinite;
     margin-bottom: 50px;
 }
-
 @keyframes blinking {
-    0% {box-shadow: 0px 8px 18px -4px #68FCFF;}
+    0% {box-shadow: 0px 15px 18px -4px #68FCFF;}
     50% {box-shadow: 0px 0px 18px -4px #68FCFF;}
-    100% {box-shadow: 0px 8px 18px -4px #68FCFF;}
+    100% {box-shadow: 0px 15px 18px -4px #68FCFF;}
 }
 .button-banner:hover{
     animation: none;
-    box-shadow: 0px 8px 18px -4px #68FCFF;
-    
-    background: rgb(128,240,255);
-    background: linear-gradient(45deg, rgba(192,246,254,1) 0%, rgba(128,240,255,1) 45%, rgba(192,246,254,1) 100%);
+    box-shadow: 0px 15px 18px -4px #68FCFF;    
+    /*background: rgb(88,235,255);*/
+    background: var(--gradient-after);
+    transition: 1s;
 }
-
-
-
-
-
-
 @media (max-width:1030px) {
     .menu {
         display: inline;
@@ -220,22 +205,17 @@ header .menu a:hover{
     .button-banner{
         margin-bottom: 50px;
     }
-    
-        
 }
 @media (max-width:600px){
     .menu {
-        
         display: inline;
         flex-direction: column;
     }
     header{
         padding: 0;
         margin: 0;
-
     }
-    .banner {
-    
+    .banner {    
         flex-direction: column;
         justify-content: left;
         margin-top: 5%;
@@ -251,12 +231,42 @@ header .menu a:hover{
     .button-banner{
         margin-left: 5.5rem;
     }
-        
-    
 }
 .video-youtube{
     width: 100%;
     frameborder: 0;
+}
+.about-course h2{
+    margin-top: 100px;
+    margin-bottom: 60px;
+    color: #213270;
+    font-size: 60px;
+    font-weight: bolder;
+}
+.content-about{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0px 45px;
+
+}
+.text-about{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.text-about div{
+    color: #213270;
+    text-align: center;
+    justify-content: center;
+    margin: 70px 20px;
+    font-size: 25px;
+}
+.image-about{
+    background-image: url(../img/2.JPG);
+    background-size: cover;
+    background-position: bottom;
+    display: block;
+    width: 100%;
+    min-width: 400px;
 }
 
 
