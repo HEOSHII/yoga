@@ -2,6 +2,7 @@
     margin: 0;
     padding:0;
     scroll-behavior: smooth;
+    font-family: 'Fira Sans Condensed', sans-serif;
 }
 :root{
     font-family: 'Fira Sans Condensed', sans-serif;
@@ -257,7 +258,7 @@ header .menu a:hover{
     color: #213270;
     text-align: center;
     justify-content: center;
-    margin: 70px 20px;
+    margin: 83px 20px;
     font-size: 25px;
 }
 .image-about{
@@ -268,6 +269,82 @@ header .menu a:hover{
     width: 100%;
     min-width: 400px;
 }
-
-
-
+.composition{
+    background-color: #ffe2de;
+    text-align: center;
+}
+.composition .tab{
+    border-bottom: 1px solid #f1d7d7;
+}
+.composition .tablinks{
+    border: none;
+    
+    display: inline-flexbox;
+    background-color: #ffe2de;
+    color:#585e8b;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px;
+    margin:0px;
+}
+.tablinks:hover{
+    color: #233270;
+    transition: 0.15s;
+}
+.composition .tablinks:focus{
+    border-bottom:3px solid #585e8b;
+    color: #233270;
+}
+.composition .tablinks:hover{
+    cursor: pointer;
+}
+.composition h2{
+    padding-top: 100px;
+    padding-bottom: 60px;
+    color: #213270;
+    font-size: 60px;
+    font-weight: bolder;
+}
+.first-tab {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 100px;
+}
+.first-tab div{
+    background-color: white;
+    padding: 50px;
+    margin: 35px 20px 20px 20px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.first-tab h3{
+    font-weight: bold;
+    font-size: 30px;
+    color: #213270;
+}
+.first-tab p{
+    
+    font-size: 20px;
+    color: #213270;
+}
+.first-tab img{
+    max-height: 70px;
+    padding: 80px 0px 80px 36%;
+    
+}
+.second-tab{
+    display: none;
+}
+.third-tab{
+    display: none;
+}
+.fourth-tab{
+    display: none;
+}
+.grid-one{ 
+}
