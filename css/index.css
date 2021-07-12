@@ -239,6 +239,7 @@ header .menu a:hover{
 
 }
 .about-course h2{
+    text-align: center;
     margin-top: 100px;
     margin-bottom: 60px;
     color: #213270;
@@ -404,9 +405,10 @@ header .menu a:hover{
     min-height: 500px;
 }
 .video-youtube{
-    grid-column-start:1;
-    grid-column-end: 2;
+    min-height: 1rem;
+    min-width: 1rem;
     padding: 0;
+   
 }
 .info-video div{
     
