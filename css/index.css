@@ -273,23 +273,10 @@ header .menu a:hover{
     font-size: 25px;
 }
 
-.composition{
-    background-color: #ffe2de;
-    text-align: center;
-}
-.composition .tab{
-    border-bottom: 1px solid #f1d7d7;
-}
-.composition .tablinks{
-    border: none;
-    display: inline-flexbox;
-    background-color: #ffe2de;
-    color:#585e8b;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 20px;
-    margin:0px;
-}
+
+
+
+
 .tablinks:hover{
     color: #233270;
 }
@@ -307,42 +294,8 @@ header .menu a:hover{
     font-size: 60px;
     font-weight: bolder;
 }
-.tab-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-bottom: 70px;  
-    max-width: 100%;  
-    
-    grid-auto-flow: dense;
-}
-.tab-settings{
-    background-color: white;
-    padding: 30px;
-    margin: 25px;
-    display: grid;
-    grid-column: 1fr 2fr 1fr;;
-    align-items: center;
-    justify-content: center;
-    justify-content: center;
-    align-items: center;
-}
-.tab-settings div{ 
-    padding: 25px;
-}
-.tab-settings img{
-    max-height: 70px;
-}
 
-.tab-settings h3{
-    font-weight: bold;
-    font-size: 25px;
-    color: #213270;
-}
-.tab-settings p{
-    font-size: 20px;
-    color: #213270;
-    line-height: 1.5;
-}
+
 
 @media(max-width: 1000px){
     .about-course h2{
