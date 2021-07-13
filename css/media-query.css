@@ -1,0 +1,159 @@
+@media (max-width:1030px) {
+    .menu {
+        display: inline;
+    }
+    .upper-head{
+        display: inline;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+    .sends{
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+    .upper-head h2{ 
+        
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+    .threebars{
+        display: flex;
+        margin-right: 50px;
+    }
+    .banner h2{
+        font-size: 3rem;
+    }
+    .button-banner{
+        margin-bottom: 50px;
+    }    
+    .tab-content>.active{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+}
+@media(max-width: 1000px){
+    .about-course h2{
+        font-size: 40px;
+        margin: 50px 0 50px 0;
+    }
+    .content-about{
+        display: flex;
+        flex-direction: column;
+    }
+    .content-about p{
+        padding: 0 20px 0 20px;
+        line-height: 1.5;
+    }
+    .text-about{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-about div{
+        margin: 0 20px 15px 20px;
+        padding: 0;
+    }
+    .image-image{
+        margin: auto;
+        width: 100%;
+    }
+    .image-about{
+        display: none;
+        padding: auto;
+        min-width: 100%;
+        background-size: cover;
+    }
+    .composition h2{
+        font-size: 40px;
+    }
+    .tab{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    .composition .tablinks{
+        font-size: 15px;
+        margin: 0;
+        padding: 10px;
+    }
+    .tab-content{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 0;
+        max-width: 100%;
+        position: center;
+        justify-content: center;
+        align-items: center;
+    }
+    composition .tablinks:focus{
+        border-bottom: none;
+    }
+    .composition{
+        max-width: 100%;
+    }
+}
+@media (max-width:600px){
+    .menu {
+        display: inline;
+        flex-direction: column;
+    }
+    header{
+        padding: 0;
+        margin: 0;
+    }
+    .banner {    
+        flex-direction: column;
+        justify-content: left;
+        margin-top: 5%;
+        margin-left: 10px;
+    }
+    .banner h2{
+        font-size: 3rem;
+        flex-direction: column;
+        justify-content: left;
+        margin-top: 5%;
+        margin-left: 10px;
+    }
+    .button-banner{
+        margin-left: 5.5rem;
+    }
+    .upper-head h1{
+        display: none;
+    }
+    .tab-content>.active{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .nav-pills .nav-link{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+    .tab-section h2{
+        font-size: 40px;
+    }
+    .composition{
+        font-size: 15px;
+        max-width: 100%;
+    }
+    .mb-3{
+        justify-content: center;
+        align-items: center;
+    }
+    .tab-content>.active{
+        height: 10%;
+    }
+    .tab-settings{
+        margin: 0 0 10px 0;
+        padding: 0;
+    }
+}
