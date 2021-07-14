@@ -263,3 +263,70 @@ iframe{
     border: 2px solid white;
     transition: 0.4s;
 }
+#price{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: #213270;
+    font-size: 65px;
+    font-weight: bolder;
+}
+.prices h2{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #213270;
+    font-size: 27px;
+    font-weight: bolder;
+}
+.main-tarif{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    margin: 0 180px 0 180px;
+}
+.main-tarif > div{
+    height: 100%;
+    
+}
+
+
+
+.main-tarif img{    
+    display: block;
+    margin: -40px auto auto auto;
+    width: 80px;
+    height: 80px;
+}
+
+.main-tarif p{
+    text-align: center;
+    color: #707070;
+    text-align: left;
+    padding: 0 30px 0 30px;
+}
+.main-tarif li{
+    text-align: center;
+    color: #707070;
+    text-align: left;
+    padding: 0;
+}
+.basic-tarif{
+    background-color: #ffe2de;
+}
+.advanced-tarif{
+    background-color: #ffe2de;
+}
+.dollar{
+    font-family: 'Rubik',sans-serif;
+    color: #213270;
+}
+.basic-tarif-content .dollar{
+    margin-top: 90px;
+}
+
