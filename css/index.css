@@ -329,4 +329,11 @@ iframe{
 .basic-tarif-content .dollar{
     margin-top: 90px;
 }
+.form-contacts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(../img/fixed-back.jpg);
+    background: fixed;
+}
+
 
