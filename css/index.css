@@ -104,12 +104,12 @@ header .upper-head{
     border: none;
     transition: 0.2s;
 }
-.threebars{
-    background: url(../img/threebars.png);
+.btn-primary{
+    /* background: url(../img/threebars.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: none;
+    border: none; */
     display: none;    
 }
 .sends a{

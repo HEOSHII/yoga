@@ -2,6 +2,9 @@
     .menu {
         display: inline;
     }
+    .btn-primary{
+        display: none;
+    }
     .upper-head{
         display: inline;
         padding: 0;
@@ -13,14 +16,14 @@
         flex-direction: column;
         display: none;
     }
-    .upper-head h2{ 
+    /* .upper-head h2{ 
         
         display: none;
-    }
+    } */
     .icons{
         display: none;
     }
-    .threebars{
+    .btn-primary{
         display: flex;
         margin-right: 50px;
     }
