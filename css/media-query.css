@@ -124,6 +124,33 @@
     .basic-tarif-content .dollar{
         margin-top: 30px;
     }
+    .tariff-radio{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+    .form h2{
+        font-size: 30px;
+    }
+    .footer-case{
+        width:100%;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .instagram{
+        width:100%;
+    }
+    .form-contacts{
+        width:100%;
+    }
+    .instagram .header h2{
+        font-size: 30px;
+    }
+    .tab-section h2{
+        font-size: 40px;
+    }
+   
     
 }
 @media (max-width:600px){
@@ -134,6 +161,13 @@
     header{
         padding: 0;
         margin: 0;
+    }
+    .header-bottom{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
     }
     .banner {    
         flex-direction: column;
@@ -214,5 +248,26 @@
         margin-bottom: -30px;
         padding-bottom: 50px;
         
+    }
+    .form-contacts{
+        display: block;
+    }
+    .form{
+        border-radius: 0;
+        width: 100%;
+    }
+}
+@media (max-width:400px){
+    .button-banner{
+        padding: 0;
+        width: 100px;
+        height: 25px;
+    }
+    .empty-block{
+        display: none;
+    }
+    .header-bottom{
+        align-items: center;
+        justify-content: center;
     }
 }

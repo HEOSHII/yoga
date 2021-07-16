@@ -371,7 +371,7 @@ iframe{
 .form form input{
     border: none;
     border-radius: 10px;
-    background-color: rgb(250, 250, 250);
+    background-color: #f4f4f6;
     text-align: start;
     font-size: 13px;
     width: 100%;
@@ -380,7 +380,11 @@ iframe{
     margin-bottom: 15px;
 }
 
-.form form input[type=text],input[type=tel] {
+.form form input[type=text]{
+    padding-left: 25px;
+    border-radius: 20px;
+}
+.form form input[type=tel]{
     padding-left: 25px;
     border-radius: 20px;
 }
@@ -400,15 +404,15 @@ iframe{
 	display: none;
 }
 .form-radio-btn label {
-    background-color: rgb(250, 250, 250);
-    color: #707070;
+    background-color: #f4f4f6;
+    color: #213270;
 	display: inline-block;
 	cursor: pointer;
 	padding: 0px 15px;
     margin-bottom: 15px;
 	line-height: 50px;
     width: 100%;
-	border-radius: 40px;
+	border-radius: 60px;
 	user-select: none;
     -webkit-transition: 0.5s ease;
 
@@ -462,9 +466,115 @@ iframe{
     font-family: 'Rubik', sans-serif;
     padding: auto;
     height: 50px;
-    
 }
-
-
-
+.instagram{
+    padding: 100px 0 100px 0;
+    background-color: #213270;
+}
+.instagram .header h2{
+    color:white;
+    font-family: 'Rubik',sans-serif;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+.carousel-inner{
+    width: 100%;
+   
+}
+carousel-item:active{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.insta{
+    font-style: italic;
+}
+.yoga{
+    text-decoration:  none;
+    font-style: italic;
+    color:#62d0df;
+}
+.yoga:hover{
+    transition: 0.5s;
+    text-transform: uppercase;
+    background: linear-gradient(4deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.footer-case{
+    padding: 90px 40px 50px 40px;
+    background-color: #1c2c64;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-case p{
+    font-family: 'Rubik',sans-serif;
+    font-size: 30px;
+    color:white;
+}
+.footer-case a, address{
+    text-decoration: none;
+    color: #707eb4;
+}
+.footer-icons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-icons button{
+    flex-direction:row;
+    height:55px; 
+    width:55px;
+    margin-left: 15px;
+}
+.footer-button-face{
+    background: url(../img/facebook-footer-before.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    transition: 0.7s;
+    transform: scale(1.0);
+}
+.footer-button-face:hover{
+    background: url(../img/facebook-footer-after.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    transition: 0.2s;   
+}
+.footer-button-inst{
+    background: url(../img/instagram-footer--before.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    transition: 0.7s;
+    transform: scale(1.0);
+}
+.footer-button-inst:hover{
+    background: url(../img/instagram-footer-after.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    transition: 0.2s;
+}
+.footer-button-youtube{
+    background: url(../img/youtube-footer-before.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    transition: 0.7s;
+    transform: scale(1.0);
+}
+.footer-button-youtube:hover{
+    background: url(../img/youtube-footer-after.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    transition: 0.2s;
+}
 
