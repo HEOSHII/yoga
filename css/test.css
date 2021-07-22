@@ -1,0 +1,28 @@
+.container-carusel{
+    background-color: cadetblue;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+.carusel{
+    height: 200px;
+    /* border: 2px solid black; */
+    margin: auto;
+    overflow: hidden;
+}
+.carusel .carusel-line{
+    display: flex; 
+    transition: .6s;
+    /* border: 1px solid black; */
+}
+.carusel-item{
+    height: 200px;
+    /* border: 1px solid black; */
+}
+.carusel-item img{
+    width: 200px;
+    padding: 10px;
+}
+.carusel-buttons{
+    text-align: center;
+}
